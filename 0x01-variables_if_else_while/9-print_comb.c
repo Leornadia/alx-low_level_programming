@@ -9,34 +9,16 @@
  */
 int main(void)
 {
-putchar('0' + 0);
+int digit;
+for (digit = 0; digit <= 9; digit++)
+{
+putchar('0' + digit);
+if (digit < 9)
+{
 putchar(',');
 putchar(' ');
-putchar('0' + 1);
-putchar(',');
-putchar(' ');
-putchar('0' + 2);
-putchar(',');
-putchar(' ');
-putchar('0' + 3);
-putchar(',');
-putchar(' ');
-putchar('0' + 4);
-putchar(',');
-putchar(' ');
-putchar('0' + 5);
-putchar(',');
-putchar(' ');
-putchar('0' + 6);
-putchar(',');
-putchar(' ');
-putchar('0' + 7);
-putchar(',');
-putchar(' ');
-putchar('0' + 8);
-putchar(',');
-putchar(' ');
-putchar('0' + 9);
+}
+}
 putchar('\n');
 return (0);
 }
