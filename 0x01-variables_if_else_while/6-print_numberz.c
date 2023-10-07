@@ -13,7 +13,7 @@ int digit;
 for (digit = 0; digit <= 9; digit++)
 {
 putchar('0' + digit);
-putchar('\n');
 }
+putchar('\n');
 return (0);
 }
