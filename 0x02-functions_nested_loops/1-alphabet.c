@@ -1,13 +1,13 @@
+#ifndef MAIN_H
+#define MAIN_H
+/* Function prototype */
+void print_alphabet(void);
+#endif /* MAIN_H */
 #include "main.h"
 /**
- * main - Entry point of the program.
- *
- * This program prints the lowercase alphabet
- * followed by a new line using the _putchar function.
- *
- * Return: Always returns 0 to indicate successful execution.
+ * print_alphabet - Prints the alphabet in lowercase followed by a new line.
  */
-int main(void)
+void print_alphabet(void)
 {
 char letter = 'a';
 while (letter <= 'z')
@@ -16,5 +16,4 @@ _putchar(letter);
 letter++;
 }
 _putchar('\n');
-return (0);
 }
