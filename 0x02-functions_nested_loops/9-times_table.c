@@ -2,9 +2,15 @@
 /**
  * main - Entry point of the program.
  *
- * times_table - Prints the 9 times table.
- *
  * Return: Always 0 (Success).
+ */
+int main(void)
+{
+times_table();
+return (0);
+}
+/**
+ * times_table - Prints the 9 times table.
  */
 void times_table(void)
 {
