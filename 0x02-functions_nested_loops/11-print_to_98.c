@@ -17,19 +17,3 @@ n++;
 }
 printf("98\n");
 }
-/**
- * main - Entry point.
- *
- * This is the main function where the program starts execution. It prompts the
- * user to enter a number and then calls the print_to_98 function.
- *
- * Return: Always 0 (Success).
- */
-int main(void)
-{
-int num;
-printf("Enter a number: ");
-scanf("%d", &num);
-print_to_98(num);
-return (0);
-}
