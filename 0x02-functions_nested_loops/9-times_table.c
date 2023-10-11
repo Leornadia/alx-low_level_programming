@@ -11,9 +11,9 @@ for (column = 0; column <= 9; column++)
 {
 product = row * column;
 if (column == 0)
-printf("0%2d", product);
+printf("%2d", product);
 else
-printf(",%3d", product);
+printf(", %2d", product);
 }
 printf("\n");
 }
