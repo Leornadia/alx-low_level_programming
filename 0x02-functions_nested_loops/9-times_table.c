@@ -13,7 +13,7 @@ product = row * column;
 if (column == 0)
 printf("0%2d", product);
 else
-printf(", 0%2d", product);
+printf(",%3d", product);
 }
 printf("\n");
 }
