@@ -1,10 +1,6 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * main - Entry point
- *
  * times_table - Prints the 9 times table.
- *
- * Return: Always 0 (Success)
  */
 void times_table(void)
 {
@@ -21,9 +17,4 @@ printf(", %2d", product);
 }
 printf("\n");
 }
-}
-int main(void)
-{
-times_table();
-return (0);
 }
