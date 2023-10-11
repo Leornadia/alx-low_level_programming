@@ -4,17 +4,32 @@
  */
 void times_table(void)
 {
-int row, column, product;
-for (row = 0; row <= 9; row++)
+int x, y, z, u, d;
+for (x = 0; x <= 9; x++)
 {
-for (column = 0; column <= 9; column++)
+for (y = 0; y <= 9; y++)
 {
-product = row * column;
-if (column == 0)
-printf("%2d", product);
-else
-printf(",%3d", product);
+z = x * y;
+if (z > 9)
+{
+u = z % 10;
+d = (z - u) / 10;
+_putchar(44);
+_putchar(32);
+_putchar(d + '0');
+_putchar(u + '0');
 }
-printf("\n");
+else
+{
+if (y != 0)
+{
+_putchar(44);
+_putchat(32);
+_putchar(32);
+}
+_putchar(z + '0');
+}
+}
+_putchar('\n');
 }
 }
