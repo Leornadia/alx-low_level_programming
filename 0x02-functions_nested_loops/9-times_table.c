@@ -3,7 +3,6 @@
  * main - Entry point of the program.
  *
  * times_table - Prints the 9 times table.
- * It calls the times_table function to print the 9 times table.
  *
  * Return: Always 0 (Success).
  */
@@ -22,9 +21,4 @@ printf(", %2d", product);
 }
 printf("\n");
 }
-}
-int main(void)
-{
-times_table();
-return (0);
 }
