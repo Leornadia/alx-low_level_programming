@@ -1,5 +1,15 @@
 #include <stdio.h>
 /**
+ * main - Entry point of the program.
+ *
+ * Return: Always 0 (Success).
+ */
+int main(void)
+{
+times_table();
+return (0);
+}
+/**
  * times_table - Prints the 9 times table.
  */
 void times_table(void)
@@ -13,13 +23,8 @@ product = row * column;
 if (column == 0)
 printf("%2d", product);
 else
-printf(",%3d", product);
+printf(", %2d", product);
 }
 printf("\n");
 }
-}
-int main(void)
-{
-times_table();
-return (0);
 }
