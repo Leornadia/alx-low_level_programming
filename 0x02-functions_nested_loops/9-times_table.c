@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point of the program.
- *
+ * times_table - Prints the 9 times table.
  * Return: Always 0 (Success).
  */
 int main(void)
@@ -9,9 +9,6 @@ int main(void)
 times_table();
 return (0);
 }
-/**
- * times_table - Prints the 9 times table.
- */
 void times_table(void)
 {
 int row, column, product;
