@@ -6,23 +6,23 @@
  *
  * Return: The integer value of the string.
  */
-int _atoi(char *s)
+int main(void)
 {
-int sign = 1;
-int result = 0;
-while (*s == '-' || *s == '+')
+char *strings[] =
 {
-if (*s == '-')
-sign *= -1;
-s++;
+"98",
+"-402",
+"   -98",
+"  214748364",
+"0",
+"  402",
+"98",
+"402",
+};
+for (int i = 0; i < 8; i++)
+{
+int num = _atoi(strings[i]);
+printf("%d\n", num);
 }
-while (*s >= '0' && *s <= '9')
-{
-int digit = *s - '0';
-if (sign > 0 && (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > INT_MAX % 10)))
-return (sign == 1 ? INT_MAX : INT_MIN);
-result = result * 10 + sign * digit;
-s++;
-}
-return (result);
+return (0);
 }
