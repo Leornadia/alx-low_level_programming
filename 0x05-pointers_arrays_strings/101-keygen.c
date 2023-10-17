@@ -4,30 +4,25 @@
 #include <string.h>
 /**
  * randomChar - Generates a random character from a given set
- * @set: The character set
+ * @set: A string containing characters to choose from
  *
- * Return: A randomly selected character from the set
+ * Return: A randomly chosen character from the set
  */
-char randomChar(char *set)
+char randomChar(const char *set)
 {
-int index = rand() % strlen(set);
+int index = rand() % (int)strlen(set);
 return (set[index]);
 }
-/**
- * main - Generates a random password based on specific rules
- *
- * Return: Always 0
- */
 int main(void)
 {
-char charset[] = "abcdefghijklmnopqrstuvwxyz";
-int passwordLength = 8;
 srand(time(NULL));
+const char *validChars = "abcdefghijklmnopqrstuvwxyz";
+int passwordLength = 10;
 printf("Generated Password: ");
 for (int i = 0; i < passwordLength; i++)
 {
-char randomCharacter = randomChar(charset);
-printf("%c", randomCharacter);
+char randomCharResult = randomChar(validChars);
+printf("%c", randomCharResult);
 }
 printf("\n");
 return (0);
