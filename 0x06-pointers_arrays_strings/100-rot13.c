@@ -7,15 +7,16 @@
  */
 char *rot13(char *str)
 {
-char *ptr = str;
-while (*ptr)
+int i = 0;
+while (str[i])
 {
-if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
+char c = str[i];
+if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 {
-char base = (*ptr >= 'a' && *ptr <= 'z') ? 'a' : 'A';
-*ptr = ((*ptr - base + 13) % 26) + base;
+str[i] = (c - 'A' < 26 ? 'A' : 'a') +
+(c - (c - 'A' < 26 ? 'A' : 'a') + 13) % 26;
 }
-ptr++;
+i++;
 }
 return (str);
 }
