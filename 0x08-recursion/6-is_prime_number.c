@@ -1,4 +1,6 @@
 #include <stdio.h>
+/* Function declaration for helper */
+int helper(int n, int i);
 /**
  * is_prime_number - Checks if a number is prime.
  * @n: The integer to check.
@@ -9,16 +11,20 @@ int is_prime_number(int n)
 {
 if (n <= 1)
 return (0);
-if (n <= 3)
-return (1);
-if (n % 2 == 0 || n % 3 == 0)
-return (0);
-int i = 5;
-while (i * i <= n)
-{
-if (n % i == 0 || n % (i + 2) == 0)
-return (0);
-i += 6;
+return (helper(n, 2));
 }
+/**
+ * helper - Helper function to check if n is divisible by any .
+ * @n: The number to check
+ * @i: The current divisor
+ *
+ * Return: 1 if n is prime, 0 otherwise
+ */
+int helper(int n, int i)
+{
+if (i * i > n)
 return (1);
+if (n % i == 0)
+return (0);
+return (helper(n, i + 1));
 }
