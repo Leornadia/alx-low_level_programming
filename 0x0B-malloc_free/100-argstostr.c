@@ -32,6 +32,7 @@ if (concatenated == NULL)
 return (NULL);
 i = 0;
 j = 0;
+k = 0;
 while (i < ac)
 {
 while (av[i][j] != '\0')
