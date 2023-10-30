@@ -8,8 +8,6 @@
  * Return: A pointer to a new string containing concatenated arguments.
  * or NULL on failure or if ac == 0 or av == NULL.
  */
-#include <stdio.h>
-#include <stdlib.h>
 char *argstostr(int ac, char **av)
 {
 int i, j, total_length = 0;
