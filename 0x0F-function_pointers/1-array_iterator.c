@@ -15,11 +15,4 @@ action(array[i]);
 i++;
 }
 }
-/**
-* print_int - Example action function to print an integer.
-* @num: The integer to be printed.
-*/
-void print_int(int num)
-{
-printf("%d ", num);
-}
+
